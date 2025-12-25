@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vecteur Lab - Seconde</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📐 Vecteur Lab : Seconde</h1>
+</header>
+
+<nav>
+    <button class="nav-btn active" onclick="switchGame('basket-norme', this)">Mode Norme</button>
+    <button class="nav-btn" onclick="switchGame('basket-direction', this)">Mode Direction</button>
+    <button class="nav-btn" onclick="switchGame('translation', this)">Mode Translation</button>
+</nav>
+
+<div class="hud">
+    <div>Score : <span id="score">0</span></div>
+    <div>Tentatives : <span id="tries">0</span></div>
+</div>
+
+<div id="canvas-container"></div>
+
+<div class="data-container">
+    <h3 id="table-title">Analyse des données</h3>
+    <div class="table-scroll">
+        <table>
+            <thead><tr id="table-head">
+                <th>Essai</th><th>Valeur</th><th>Résultat</th>
+            </tr></thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
